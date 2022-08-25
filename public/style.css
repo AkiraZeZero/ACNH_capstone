@@ -1,0 +1,178 @@
+#bg {
+    background-image: url("https://i.gifer.com/2BM1.gif");
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bugs {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://static.wikia.nocookie.net/animalcrossing/images/9/99/NH-Icon-monarchbutterfly.png");
+    background-color: pink;
+    background-size: 100px;
+}
+
+#fish {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://dodo.ac/np/images/thumb/4/4d/Bitterling_NH_Icon.png/120px-Bitterling_NH_Icon.png");
+    background-color: lightblue;
+    background-size: 100px;
+}
+
+#sea {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://static.wikia.nocookie.net/animalcrossing/images/f/f5/NH-Icon-umbrellaoctopus.png");
+    background-color: lightseagreen;
+    background-size: 100px;
+}
+
+#art {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://i.pinimg.com/564x/27/bb/51/27bb51fb782e70f26d2cc28349819393.jpg");
+    background-size: 100px;
+}
+
+#fossils {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://dodo.ac/np/images/thumb/5/57/Fossil_NH_Inv_Icon.png/120px-Fossil_NH_Inv_Icon.png");
+    background-color: lightblue;
+    background-size: 100px;
+}
+
+#turnipCalculator {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://play-lh.googleusercontent.com/VbtbQEN6LYoyRf0aZT4Nk6ZBm-4prO3T7tWdlboyLerJX8z_TPs__jz1rR6P3541mPM");
+    background-size: 100px;
+}
+
+#kk {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://i.pinimg.com/564x/89/fd/8d/89fd8d5ef4e81dd43832d81c615ef2f4.jpg");
+    background-size: 100px;
+}
+
+#fortune {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-image: url("https://i.pinimg.com/564x/24/1e/b8/241eb833d12773669d992be3e6b99197.jpg");
+    background-size: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    width: 20em;
+    height: 2em;
+    display: flex;
+    border: 3px solid black;
+    border-radius: 3em;
+    margin-left: 3%;
+}
+
+form input {
+    flex: 1;
+    margin-left:5%;
+    /* background-color: transparent; */
+    border-color: transparent;
+    /* border-color: rgba(0, 0, 0, 0.0); */
+}
+
+form button {
+    border-radius: 3em;
+    border-width: 0em;
+    outline: none;
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+#villagerList {
+    width: 90%;
+    height: 960px;
+    margin: auto;
+    /* background-color: transparent; */
+    border-color: rgba(0, 0, 0, 0.15);
+    border-style:dashed ;
+    border: 5%;
+    border-radius: 3em;
+}
+
+/* calculator */
+
+#calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+#btn {
+    background-color: #fb0066;
+}

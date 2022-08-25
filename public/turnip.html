@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnip Calculator</title>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+		integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+		integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<style>
+		table {
+			border: 1px solid black;
+			margin-left: auto;
+			margin-right: auto;
+            border-radius: 3%;
+		}
+
+        input[type="buttonYellow"]:hover {
+            cursor: pointer;
+        }
+
+        input[type="buttonTomato"]:hover {
+            cursor: pointer;
+        }
+
+        input[type="buttonBlue"]:hover {
+            cursor: pointer;
+        }
+
+        input[type="buttonGreen"]:hover {
+            cursor: pointer;
+        }
+
+		input[type="buttonYellow"] {
+			width: 90px;
+			padding: 20px;
+			background-color: #FFEE82;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+		}
+
+        input[type="buttonBlue"] {
+			width: 90px;
+			padding: 20px;
+			background-color: lightskyblue;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+		}
+
+        input[type="buttonGreen"] {
+			width: 90px;
+			padding: 20px;
+			background-color: lightgreen;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+		}
+
+        input[type=buttonTomato] {
+            width: 90px;
+			padding: 20px;
+			background-color: tomato;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+        }
+
+		input[type="text"] {
+			padding: 20px 40px;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			border: 2px solid black;
+		}
+
+        #calcu {
+            background-color: transparent;
+            
+        }
+
+        #bg{
+            background-image: url("https://i.gifer.com/2BM1.gif");
+        }
+
+        h1{
+            text-align: center;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .introText {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+            width: 80%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #home {
+            padding: 10px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            font-weight: bold;
+			border-radius: 5px;
+            color: white;
+            background-color: lightgreen;
+            margin-left: 4%;
+        }
+
+	</style>
+</head>
+
+<!-- calculator -->
+
+<body id="bg">
+    <div class="introText">
+        <h1>Welcome To the Turnip Calculator!</h1>
+        <h2>In this calculator you can see how many bells you will get from selling x amount of turnips like if you sold 100 turnips at 96 bells each you would get 9,600 bells, go ahead and give it a try!</h2>
+    </div>
+    <div id="stalks">
+
+	<table id="calcu">
+		<tr>
+			<td colspan="3"><input type="text" id="result"></td>
+			<!-- clr() function will call clr to clear all value -->
+			<td><input type="buttonYellow" value="c" onclick="clr()" /> </td>
+		</tr>
+		<tr>
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+			<td><input type="buttonTomato" value="1" onclick="dis('1')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonYellow" value="2" onclick="dis('2')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonBlue" value="3" onclick="dis('3')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonGreen" value="/" onclick="dis('/')"
+						onkeydown="myFunction(event)"> </td>
+		</tr>
+		<tr>
+			<td><input type="buttonBlue" value="4" onclick="dis('4')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonGreen" value="5" onclick="dis('5')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonTomato" value="6" onclick="dis('6')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonYellow" value="*" onclick="dis('*')"
+						onkeydown="myFunction(event)"> </td>
+		</tr>
+		<tr>
+			<td><input type="buttonGreen" value="7" onclick="dis('7')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonTomato" value="8" onclick="dis('8')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonYellow" value="9" onclick="dis('9')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonBlue" value="-" onclick="dis('-')"
+						onkeydown="myFunction(event)"> </td>
+		</tr>
+		<tr>
+			<td><input type="buttonYellow" value="0" onclick="dis('0')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="buttonBlue" value="." onclick="dis('.')"
+						onkeydown="myFunction(event)"> </td>
+			<!-- solve function call function solve to evaluate value -->
+			<td><input type="buttonGreen" value="=" onclick="solve()"> </td>
+
+			<td><input type="buttonTomato" value="+" onclick="dis('+')"
+						onkeydown="myFunction(event)"> </td>
+		</tr>
+	</table>
+
+	<script>
+		// Function that display value
+		function dis(val) {
+			document.getElementById("result").value += val
+		}
+
+		function myFunction(event) {
+			if (event.key == '0' || event.key == '1'
+				|| event.key == '2' || event.key == '3'
+				|| event.key == '4' || event.key == '5'
+				|| event.key == '6' || event.key == '7'
+				|| event.key == '8' || event.key == '9'
+				|| event.key == '+' || event.key == '-'
+				|| event.key == '*' || event.key == '/')
+				document.getElementById("result").value += event.key;
+		}
+
+		var cal = document.getElementById("calcu");
+		cal.onkeyup = function (event) {
+			if (event.keyCode === 13) {
+				console.log("Enter");
+				let x = document.getElementById("result").value
+				console.log(x);
+				solve();
+			}
+		}
+
+		// Function that evaluates the digit and return result
+		function solve() {
+			let x = document.getElementById("result").value
+			let y = math.evaluate(x)
+			document.getElementById("result").value = y
+		}
+
+		// Function that clear the display
+		function clr() {
+			document.getElementById("result").value = ""
+		}
+	</script>
+    </div>
+</body>
+<br>
+<footer>
+    <a href="/"><button id="home">Home</button></a>
+</footer>
+</html>
