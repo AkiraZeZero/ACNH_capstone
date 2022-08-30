@@ -7,12 +7,12 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#buttons {
+.buttons {
     display: flex;
     justify-content: space-evenly;
 }
 
-#bugs {
+.bugs {
     width: 100px;
     height: 100px;
     border: none;
@@ -25,7 +25,7 @@ h1 {
     background-size: 100px;
 }
 
-#fish {
+.fish {
     width: 100px;
     height: 100px;
     border: none;
@@ -38,7 +38,7 @@ h1 {
     background-size: 100px;
 }
 
-#sea {
+.sea {
     width: 100px;
     height: 100px;
     border: none;
@@ -51,7 +51,7 @@ h1 {
     background-size: 100px;
 }
 
-#art {
+.art {
     width: 100px;
     height: 100px;
     border: none;
@@ -63,7 +63,7 @@ h1 {
     background-size: 100px;
 }
 
-#fossils {
+.fossils {
     width: 100px;
     height: 100px;
     border: none;
@@ -76,7 +76,7 @@ h1 {
     background-size: 100px;
 }
 
-#turnipCalculator {
+.turnipCalculator {
     width: 100px;
     height: 100px;
     border: none;
@@ -84,11 +84,12 @@ h1 {
     outline: none;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    background-image: url("https://play-lh.googleusercontent.com/VbtbQEN6LYoyRf0aZT4Nk6ZBm-4prO3T7tWdlboyLerJX8z_TPs__jz1rR6P3541mPM");
+    background-image: url("https://dodo.ac/np/images/thumb/8/86/Turnips_NH_Inv_Icon.png/120px-Turnips_NH_Inv_Icon.png");
+    background-color: mediumaquamarine;
     background-size: 100px;
 }
 
-#kk {
+.kk {
     width: 100px;
     height: 100px;
     border: none;
@@ -100,7 +101,7 @@ h1 {
     background-size: 100px;
 }
 
-#fortune {
+.fortune {
     width: 100px;
     height: 100px;
     border: none;
@@ -142,17 +143,79 @@ form button {
     background-color: lightgreen;
 }
 
-#villagerList {
+.home {
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    background-color: lightgreen;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.list {
     width: 90%;
-    height: 960px;
+    height: 600px;
     margin: auto;
     /* background-color: transparent; */
     border-color: rgba(0, 0, 0, 0.15);
     border-style:dashed ;
     border: 5%;
     border-radius: 3em;
+    }
+
+
+.villagerHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.artHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bugHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fishHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fossilsHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seaHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fortuneHouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* calculator */
 
 #calculator {
@@ -173,6 +236,7 @@ form button {
     width: 100%;
     height: 65%;
 }
-#btn {
+
+/* #btn {
     background-color: #fb0066;
-}
+} */

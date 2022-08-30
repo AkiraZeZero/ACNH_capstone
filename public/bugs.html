@@ -8,20 +8,28 @@
     <title>Our Buggos</title>
 </head>
 <body>
-    <section id="bugList">
-        <div>
-            <h2>On this page you can look up the ACNH bugs just by using numbers! The limit is</h2>
-            <form>
-                <input type="text" placeholder="Search for Bug ID">
-                <button>Search</button>
-            </form>
-        </div>
-        <br>
-        <div id="villagerHouse">
-        </div>
-    </section>
-</body>
-<footer>
-    <a href="home.html"><button>Home</button></a>
-</footer>
+    <body id="bg">
+        <h1>
+            Welcome to the Buggos Page!
+        </h1>
+        <section class="list">
+            <div>
+                <h2>On this page you can look up Animal Crossing bugs with just their name or ID!</h2>
+                <form>
+                    <input type="text" placeholder="Search for Bugs by Name/ID">
+                    <button class="searchBtn">Search</button>
+                </form>
+            </div>
+            <br>
+            <div class="bugHouse">
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js">   
+        </script>
+        <script src="assets/js/bug.js"></script>
+    </body>
+    <br>
+    <footer>
+        <a href="/"><button class="home">Home</button></a>
+    </footer>
 </html>

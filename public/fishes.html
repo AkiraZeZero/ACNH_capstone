@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fishes</title>
+    <style>
+
+        #bg {
+            background-image: url("https://i.gifer.com/2BM1.gif");
+        }
+
+        /* #home {
+            padding: 10px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            font-weight: bold;
+			border-radius: 5px;
+            color: white;
+            background-color: lightgreen;
+            margin-left: 4%;
+            cursor: pointer;
+        } */
+    </style>
+</head>
+<body id="bg">
+    <h1>Welcome to the Fishes Page!</h1>
+    <section class="list">
+        <div>
+            <h2>On this page you can look up Animal Crossing fish using just the name or ID!</h2>
+            <form>
+                <input type="text" placeholder="Search for Fish by Name/ID">
+                <button class="searchBtn">Search</button>
+            </form>
+        </div>
+        <br>
+        <div class="fishHouse">
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js">   
+    </script>
+    <script src="assets/js/fishes.js"></script>
+</body>
+<br>
+<footer>
+    <a href="/"><button class="home">Home</button></a>
+</footer>
+</html>
